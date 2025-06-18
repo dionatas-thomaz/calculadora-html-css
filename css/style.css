@@ -1,3 +1,58 @@
 *{
-    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.corpo-calc{
+    background-color: black;
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tela-calc{
+    background-color: azure;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+.grid-botoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 12px;
+    margin: 20px auto;
+}
+
+.grid-botoes button {
+    padding: 16px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.grid-botoes button:hover {
+    transform: scale(1.05);
+}
+.igual {
+    background-color: rgb(165, 160, 160);
+    grid-row: 4 / span 2;
+    grid-column: 4;
+}
+
+ .zero {
+    grid-column: span 2;
+}
+.lar{
+  background-color: orange;
+}
+.bran{
+    background-color: rgb(165, 160, 160);
 }
